@@ -1,0 +1,127 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Organize e acompanhe o andamento de tarefas escolares.">
+    <title>Atividade Final de JS - Painel de Tarefas Escolares</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+    <header class="cabecalho">
+        <div class="cabecalho-conteudo">
+            <div class="cabecalho-apresentacao">
+                <p class="cabecalho-etiqueta">Organização para os estudos</p>
+                <h1>Painel de Tarefas Escolares</h1>
+                <p class="cabecalho-descricao">
+                    Acompanhe suas atividades e avance uma tarefa de cada vez.
+                </p>
+            </div>
+
+            <div class="navegacao">
+                <nav class="menu-navegacao" id="menu-navegacao">
+                    <a href="#resumo">Resumo</a>
+                    <a href="#tarefas">Minhas tarefas</a>
+                    <a href="#motivacao">Motivação</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="conteudo">
+        <section class="resumo" id="resumo">
+            <div>
+                <p class="secao-etiqueta">Seu progresso</p>
+                <h2>Resumo das tarefas</h2>
+                <p class="resumo-orientacao">Cada passo concluído conta. Continue no seu ritmo!</p>
+            </div>
+            <!-- No JavaScript, atualize este texto com a quantidade de tarefas concluídas. -->
+            <p class="contador" id="contador-tarefas">
+                1 de 4 tarefas concluídas
+            </p>
+        </section>
+
+        <section class="secao-tarefas" id="tarefas">
+            <div class="secao-cabecalho">
+                <div>
+                    <p class="secao-etiqueta">Planeje e acompanhe</p>
+                    <h2>Minhas tarefas</h2>
+                </div>
+                <p class="secao-dica">Use o botão de cada atividade para avançar o estado.</p>
+            </div>
+
+            <div class="lista-tarefas">
+                <!-- Cada article é um card. As classes tarefa-* indicam o estado inicial.
+                     Em cada card, o JavaScript deverá atualizar o indicador e o botão. -->
+                <article class="tarefa tarefa-pendente" id="tarefa-1">
+                    <div class="tarefa-cabecalho">
+                        <span class="tarefa-numero">Tarefa 01</span>
+                        <!-- O JavaScript atualiza o texto e a classe estado-* deste indicador. -->
+                        <span class="indicador-estado estado-pendente">Pendente</span>
+                    </div>
+                    <h3>Revisar anotações de Ciências</h3>
+                    <p>Reler o conteúdo sobre ecossistemas e destacar os conceitos principais.</p>
+                    <!-- Ao clicar, avance o estado deste card e atualize o contador. -->
+                    <button class="botao-avancar" type="button">Iniciar tarefa</button>
+                </article>
+
+                <article class="tarefa tarefa-andamento" id="tarefa-2">
+                    <div class="tarefa-cabecalho">
+                        <span class="tarefa-numero">Tarefa 02</span>
+                        <span class="indicador-estado estado-andamento">Em andamento</span>
+                    </div>
+                    <h3>Preparar apresentação de História</h3>
+                    <p>Organizar as informações sobre o tema e preparar os tópicos para apresentar.</p>
+                    <button class="botao-avancar" type="button">Concluir tarefa</button>
+                </article>
+
+                <article class="tarefa tarefa-concluida" id="tarefa-3">
+                    <div class="tarefa-cabecalho">
+                        <span class="tarefa-numero">Tarefa 03</span>
+                        <span class="indicador-estado estado-concluida">Concluída</span>
+                    </div>
+                    <h3>Resolver exercícios de Matemática</h3>
+                    <p>Responder às questões de revisão sobre frações no caderno.</p>
+                    <button class="botao-avancar" type="button">Recomeçar tarefa</button>
+                </article>
+
+                <article class="tarefa tarefa-pendente" id="tarefa-4">
+                    <div class="tarefa-cabecalho">
+                        <span class="tarefa-numero">Tarefa 04</span>
+                        <span class="indicador-estado estado-pendente">Pendente</span>
+                    </div>
+                    <h3>Fazer leitura de Literatura</h3>
+                    <p>Ler o próximo capítulo do livro e anotar uma passagem interessante.</p>
+                    <button class="botao-avancar" type="button">Iniciar tarefa</button>
+                </article>
+            </div>
+        </section>
+
+        <section class="motivacao" id="motivacao">
+            <div class="motivacao-texto">
+                <p class="secao-etiqueta">Desafio complementar</p>
+                <h2>Uma ideia para seguir em frente</h2>
+                <!-- O JavaScript pode substituir este texto por uma frase aleatória. -->
+                <p class="mensagem-motivacional" id="mensagem-motivacional">
+                    Grandes aprendizados começam com pequenos passos.
+                </p>
+            </div>
+            <!-- Ao clicar, escolha e exiba uma mensagem motivacional. -->
+            <button class="botao-motivacao" id="botao-motivacao" type="button">
+                Exibir mensagem
+            </button>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <p>Painel de Tarefas Escolares - Atividade Final de JavaScript</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
+
+

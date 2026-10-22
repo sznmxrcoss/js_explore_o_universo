@@ -1,0 +1,368 @@
+﻿* {
+    box-sizing: border-box;
+}
+
+:root {
+    color-scheme: light;
+    font-family: Arial, sans-serif;
+    color: #203047;
+    background-color: #f3f6fb;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+}
+
+body {
+    min-width: 320px;
+    margin: 0;
+}
+
+button,
+a {
+    font: inherit;
+}
+
+a {
+    color: inherit;
+}
+
+button:focus-visible,
+a:focus-visible {
+    outline: 3px solid #f5b942;
+    outline-offset: 3px;
+}
+
+.cabecalho {
+    color: #ffffff;
+    background: linear-gradient(130deg, #173b66, #245b78);
+}
+
+.cabecalho-conteudo {
+    width: min(100% - 32px, 540px);
+    margin: 0 auto;
+    padding: 12px 0;
+}
+
+.cabecalho-apresentacao {
+    max-width: 700px;
+}
+
+.cabecalho-etiqueta,
+.secao-etiqueta {
+    margin: 0 0 8px;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.cabecalho-etiqueta {
+    color: #c7e8f3;
+}
+
+.cabecalho h1 {
+    margin: 0;
+    font-size: 1.5rem;
+    line-height: 1.12;
+}
+
+.cabecalho-descricao {
+    max-width: 550px;
+    margin: 7px 0 0;
+    color: #e4f1f5;
+    font-size: 0.7rem;
+    line-height: 1.4;
+}
+
+.navegacao {
+    display: flex;
+    margin-top: 8px;
+}
+
+.menu-navegacao {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 6px;
+}
+
+.menu-navegacao a {
+    border-radius: 7px;
+    padding: 9px 12px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.menu-navegacao a:hover {
+    background-color: rgb(255 255 255 / 14%);
+}
+
+.conteudo {
+    width: min(100% - 32px, 540px);
+    margin: 18px auto 40px;
+}
+
+.resumo,
+.motivacao {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    border-radius: 14px;
+    padding: 21px;
+}
+
+.resumo {
+    border: 1px solid #dce6ef;
+    background-color: #ffffff;
+}
+
+.secao-etiqueta {
+    color: #356477;
+}
+
+.resumo h2,
+.secao-tarefas h2,
+.motivacao h2 {
+    margin: 0;
+    color: #203047;
+    font-size: 1.45rem;
+}
+
+.resumo-orientacao {
+    margin: 8px 0 0;
+    color: #52647a;
+    line-height: 1.5;
+}
+
+.contador {
+    margin: 0;
+    border-radius: 999px;
+    padding: 12px 17px;
+    color: #173b66;
+    background-color: #e8f2f7;
+    font-weight: 700;
+}
+
+.secao-tarefas {
+    margin-top: 38px;
+}
+
+.secao-cabecalho {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    margin-bottom: 18px;
+}
+
+.secao-dica {
+    margin: 0 0 2px;
+    color: #52647a;
+    line-height: 1.5;
+}
+
+.lista-tarefas {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.tarefa {
+    display: flex;
+    min-height: 230px;
+    flex-direction: column;
+    align-items: flex-start;
+    border: 1px solid #dce6ef;
+    border-left: 6px solid #718096;
+    border-radius: 12px;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 14px rgb(32 48 71 / 5%);
+}
+
+.tarefa-pendente {
+    border-left-color: #b45309;
+}
+
+.tarefa-andamento {
+    border-left-color: #1d4ed8;
+}
+
+.tarefa-concluida {
+    border-left-color: #15803d;
+}
+
+.tarefa-cabecalho {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.tarefa-numero {
+    color: #52647a;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.indicador-estado {
+    border-radius: 999px;
+    padding: 5px 10px;
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+.estado-pendente {
+    color: #7c2d12;
+    background-color: #ffedd5;
+}
+
+.estado-andamento {
+    color: #1e3a8a;
+    background-color: #dbeafe;
+}
+
+.estado-concluida {
+    color: #14532d;
+    background-color: #dcfce7;
+}
+
+.tarefa h3 {
+    margin: 19px 0 7px;
+    color: #203047;
+    font-size: 1.15rem;
+    line-height: 1.35;
+}
+
+.tarefa p {
+    margin: 0 0 18px;
+    color: #52647a;
+    line-height: 1.55;
+}
+
+.botao-avancar,
+.botao-motivacao {
+    border: 0;
+    border-radius: 8px;
+    padding: 10px 14px;
+    color: #ffffff;
+    background-color: #245b78;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 150ms ease, transform 150ms ease;
+}
+
+.botao-avancar {
+    margin-top: auto;
+}
+
+.botao-avancar:hover,
+.botao-motivacao:hover {
+    background-color: #173b66;
+    transform: translateY(-1px);
+}
+
+.motivacao {
+    margin-top: 30px;
+    background-color: #e8f2f7;
+}
+
+.motivacao .secao-etiqueta {
+    color: #245b78;
+}
+
+.mensagem-motivacional {
+    margin: 10px 0 0;
+    color: #364a60;
+    font-size: 1.05rem;
+    line-height: 1.55;
+}
+
+.rodape {
+    padding: 22px 20px;
+    color: #e4f1f5;
+    background-color: #173b66;
+    text-align: center;
+}
+
+.rodape p {
+    margin: 0;
+}
+
+@media (min-width: 701px) {
+    .cabecalho-conteudo,
+    .conteudo {
+        width: min(1100px, calc(100% - 40px));
+    }
+
+    .cabecalho-conteudo {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 24px;
+        padding: 10px 0;
+    }
+
+    .navegacao {
+        justify-content: flex-end;
+        margin-top: 0;
+    }
+
+    .menu-navegacao {
+        gap: 10px;
+    }
+
+    .menu-navegacao a {
+        padding: 9px 12px;
+    }
+
+    .conteudo {
+        margin-top: 32px;
+    }
+
+    .resumo,
+    .motivacao {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 24px;
+        padding: 24px 28px;
+    }
+
+    .contador,
+    .botao-motivacao {
+        flex-shrink: 0;
+    }
+
+    .secao-cabecalho {
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    .lista-tarefas {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .tarefa {
+        flex: 1 1 calc(50% - 9px);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+
+
+
